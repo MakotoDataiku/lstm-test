@@ -2003,7 +2003,7 @@
     "custom_python": [
       {
         "enabled": true,
-        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.ensemble import AdaBoostRegressor\n\nclf \u003d AdaBoostRegressor(n_estimators\u003d20)\n",
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\nfrom catboost import Pool, CatBoostRegressor\nclf \u003d CatBoostRegressor()\n",
         "name": "Custom Python model"
       }
     ],

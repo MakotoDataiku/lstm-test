@@ -4808,6 +4808,11 @@
         "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom pyts.classification import SAXVSM\n\nclf \u003d SAXVSM(window_size\u003d34, sublinear_tf\u003dFalse, use_idf\u003dFalse)\n",
         "name": "SAXVSM"
+      },
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom pyts.classification import BOSSVS\nclf \u003d BOSSVS(window_size\u003d28)\n",
+        "name": "BOSSVS"
       }
     ],
     "plugin_python": {

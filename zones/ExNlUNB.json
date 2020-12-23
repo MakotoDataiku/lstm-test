@@ -1,7 +1,36 @@
 {
   "name": "Regression",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "output",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "house_price",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "evaluate_on_output",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "output_evaluated",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "model_metrics",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "sWd89nfe",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "train_Prediction__SCIKIT_MODEL__on_house_price",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

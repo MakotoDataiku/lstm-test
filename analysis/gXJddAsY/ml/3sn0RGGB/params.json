@@ -4832,7 +4832,7 @@
       {
         "enabled": true,
         "code": "from catboost import CatBoostClassifier, Pool\n\nclf \u003d CatBoostClassifier()",
-        "name": "Custom Python model"
+        "name": "CatBoostClassifier"
       }
     ],
     "plugin_python": {

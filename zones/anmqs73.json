@@ -5,6 +5,10 @@
     {
       "objectId": "titanic_train",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "titanic_test",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

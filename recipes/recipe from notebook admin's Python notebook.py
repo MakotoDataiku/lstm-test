@@ -44,9 +44,3 @@ py_recipe_output.write_with_schema(train_df)
 py_recipe_output = dataiku.Dataset("ts_test")
 py_recipe_output.write_with_schema(test_df)
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Recipe outputs
-ts_train = dataiku.Dataset("ts_train")
-ts_train.write_with_schema(pandas_dataframe)
-ts_test = dataiku.Dataset("ts_test")
-ts_test.write_with_schema(pandas_dataframe)

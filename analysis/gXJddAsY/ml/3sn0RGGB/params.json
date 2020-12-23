@@ -4813,6 +4813,11 @@
         "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom pyts.classification import BOSSVS\nclf \u003d BOSSVS(window_size\u003d28)\n",
         "name": "BOSSVS"
+      },
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom skorch import NeuralNetClassifier\n\nclass MyModule(nn.Module):\n    def __init__(self, num_units\u003d10, nonlin\u003dnn.ReLU()):\n        super(MyModule, self).__init__()\n\n        self.dense0 \u003d nn.Linear(20, num_units)\n        self.nonlin \u003d nonlin\n        self.dropout \u003d nn.Dropout(0.5)\n        self.dense1 \u003d nn.Linear(num_units, num_units)\n        self.output \u003d nn.Linear(num_units, 2)\n        self.softmax \u003d nn.Softmax(dim\u003d-1)\n\n    def forward(self, X, **kwargs):\n        X \u003d self.nonlin(self.dense0(X))\n        X \u003d self.dropout(X)\n        X \u003d self.nonlin(self.dense1(X))\n        X \u003d self.softmax(self.output(X))\n        return X\n\n\nclf \u003d NeuralNetClassifier(\n    MyModule,\n    max_epochs\u003d10,\n    lr\u003d0.1,\n    # Shuffle training data on each epoch\n    iterator_train__shuffle\u003dTrue,\n)\n\n",
+        "name": "Custom Python model"
       }
     ],
     "plugin_python": {

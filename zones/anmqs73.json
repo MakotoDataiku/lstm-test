@@ -1,7 +1,12 @@
 {
   "name": "Classification",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "titanic_train",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

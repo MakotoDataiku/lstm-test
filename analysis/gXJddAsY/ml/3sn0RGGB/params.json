@@ -4802,7 +4802,7 @@
       {
         "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom pyts.classification import KNeighborsClassifier\nclf \u003d KNeighborsClassifier(metric\u003d\u0027dtw\u0027)\n",
-        "name": "Custom Python model"
+        "name": "KNeighborsClassifier with DTW"
       }
     ],
     "plugin_python": {

@@ -2117,12 +2117,12 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
         },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
+        "customHandlingCode": "from sklearn import preprocessing\nimport numpy as np\n\n# Applies log transformation to the feature\nprocessor \u003d preprocessing.FunctionTransformer(np.log1p)\n",
+        "customProcessorWantsMatrix": true,
         "sendToInput": "main"
       },
       "col_0": {

@@ -22,13 +22,11 @@ reg.fit(X_train, y_train)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 y_predicted = reg.predict(X_test)
-y_proba = reg.predict_proba(X_test)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 reg.score(X_test, y_test)
 
 df_test["predicted"] = y_predicted
-df_test["proba"] = y_proba
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs

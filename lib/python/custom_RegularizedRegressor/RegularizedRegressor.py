@@ -1,5 +1,4 @@
 import numpy as np
-from sklearn.cross_validation import cross_val_score
 
 class RegularizedRegressor:
     def __init__(self, l = 0.01):

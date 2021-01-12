@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1610462038725
+    "lastModifiedOn": 1610462913736
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,85 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "type": "double"
+      },
+      {
+        "name": "bedrooms",
+        "type": "double"
+      },
+      {
+        "name": "bathrooms",
+        "type": "double"
+      },
+      {
+        "name": "sqft_living",
+        "type": "bigint"
+      },
+      {
+        "name": "sqft_lot",
+        "type": "bigint"
+      },
+      {
+        "name": "floors",
+        "type": "double"
+      },
+      {
+        "name": "waterfront",
+        "type": "bigint"
+      },
+      {
+        "name": "view",
+        "type": "bigint"
+      },
+      {
+        "name": "condition",
+        "type": "bigint"
+      },
+      {
+        "name": "sqft_above",
+        "type": "bigint"
+      },
+      {
+        "name": "sqft_basement",
+        "type": "bigint"
+      },
+      {
+        "name": "yr_built",
+        "type": "bigint"
+      },
+      {
+        "name": "yr_renovated",
+        "type": "bigint"
+      },
+      {
+        "name": "street",
+        "type": "string"
+      },
+      {
+        "name": "city",
+        "type": "string"
+      },
+      {
+        "name": "statezip",
+        "type": "string"
+      },
+      {
+        "name": "country",
+        "type": "string"
+      },
+      {
+        "name": "predicted",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [

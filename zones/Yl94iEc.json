@@ -5,6 +5,10 @@
     {
       "objectId": "DQ1im0k6",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_DQ1im0k6",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [

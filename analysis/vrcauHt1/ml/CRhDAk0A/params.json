@@ -2068,7 +2068,7 @@
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
-        "enabled": false
+        "enabled": true
       }
     },
     "keras": {

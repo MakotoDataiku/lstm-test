@@ -9,6 +9,14 @@
     {
       "objectId": "titanic_test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "train_Prediction__SCIKIT_MODEL__on_titanic_train",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "JzZK9c2T",
+      "objectType": "SAVED_MODEL"
     }
   ],
   "shared": [],

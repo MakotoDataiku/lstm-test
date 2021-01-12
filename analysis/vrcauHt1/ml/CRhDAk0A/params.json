@@ -2007,12 +2007,12 @@
         "name": "CatBoostRegressor"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom lightgbm import LGBMRegressor\nfrom sklearn.model_selection import GridSearchCV\n\nclf \u003d LGBMRegressor()\n\ngridsearch_estimator \u003d GridSearchCV(estimator\u003dclf,\n                                    param_grid \u003d {\"max_depth\":[10, 20 ,30],\n                                                  \"n_estimators\":[10, 50, 100]},\n                                   cv\u003d3)",
         "name": "LGBMRegressor"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom custom_PLS.custom_PLS import PLS\n\nclf \u003d PLS(n_components\u003d2)\n",
         "name": "PLS"
       }
@@ -2073,7 +2073,7 @@
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
-        "enabled": true
+        "enabled": false
       }
     },
     "keras": {

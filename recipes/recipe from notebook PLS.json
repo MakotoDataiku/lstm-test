@@ -4,7 +4,8 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "custom-models"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -41,11 +42,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1610462420278
+    "lastModifiedOn": 1610462429030
   },
   "creationTag": {
     "versionNumber": 0,

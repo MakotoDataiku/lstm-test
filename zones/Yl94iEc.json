@@ -2,7 +2,16 @@
   "name": "Models in a folder",
   "color": "#4B8021",
   "items": [],
-  "shared": [],
+  "shared": [
+    {
+      "objectId": "house_price",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "output",
+      "objectType": "DATASET"
+    }
+  ],
   "tags": [],
   "customFields": {},
   "checklists": {

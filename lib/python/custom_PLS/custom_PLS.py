@@ -16,7 +16,7 @@ class PLS():
         return self.pls.score(X, Y, sample_weight)
     
     def get_params(self, **parameters):
-        return self.pls.set_params(**parameters)
+        return self.pls.get_params(**parameters)
     
     @property
     def intercept_(self):

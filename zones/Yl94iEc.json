@@ -13,6 +13,10 @@
     {
       "objectId": "output_scored_2",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_output_scored_2",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [

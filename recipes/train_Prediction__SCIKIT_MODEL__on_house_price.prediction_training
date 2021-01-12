@@ -5,8 +5,8 @@
   },
   "modeling": {
     "custom_python": {
-      "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\nfrom catboost import Pool, CatBoostRegressor\nclf \u003d CatBoostRegressor(iterations\u003d2, \n                          depth\u003d2, \n                          learning_rate\u003d1, \n                          loss_function\u003d\u0027RMSE\u0027)\n",
-      "name": "Custom Python model",
+      "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom lightgbm import LGBMRegressor\nfrom sklearn.model_selection import GridSearchCV\n\nclf \u003d LGBMRegressor()\n\ngridsearch_estimator \u003d GridSearchCV(estimator\u003dclf,\n                                    param_grid \u003d {\"max_depth\":[10, 20 ,30],\n                                                  \"n_estimators\":[10, 50, 100]},\n                                   cv\u003d3)",
+      "name": "LGBMRegressor",
       "enabled": true
     },
     "computeLearningCurves": false,
@@ -45,7 +45,7 @@
     "algorithm": "SCIKIT_MODEL",
     "gridLength": 1
   },
-  "generatingModelId": "A-CUSTOMMODELS-vrcauHt1-CRhDAk0A-s2-pp1-m1",
+  "generatingModelId": "A-CUSTOMMODELS-vrcauHt1-CRhDAk0A-s10-pp2-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -569,6 +569,7 @@
     "userModified": false
   },
   "script": {
+    "contextProjectKey": "CUSTOMMODELS",
     "columnsSelection": {
       "mode": "ALL"
     },

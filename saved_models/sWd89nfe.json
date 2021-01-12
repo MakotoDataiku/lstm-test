@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (SCIKIT_MODEL) on house_price",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1610447947134",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -15,7 +15,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-CUSTOMMODELS-vrcauHt1-CRhDAk0A-s2-pp1-m1",
+  "lastExportedFrom": "A-CUSTOMMODELS-vrcauHt1-CRhDAk0A-s10-pp2-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -1748,11 +1748,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608733520932
+    "lastModifiedOn": 1610447947241
   },
   "creationTag": {
     "versionNumber": 0,

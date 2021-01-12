@@ -17,6 +17,14 @@
     {
       "objectId": "JzZK9c2T",
       "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "titanic_test_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "score_titanic_test",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

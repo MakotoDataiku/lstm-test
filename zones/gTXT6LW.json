@@ -1,7 +1,20 @@
 {
   "name": "Clustering",
   "color": "#0F786B",
-  "items": [],
+  "items": [
+    {
+      "objectId": "titanic_train",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "cluster_titanic_train",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "titanic_train_clustered",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [
     {
       "objectId": "titanic_train",

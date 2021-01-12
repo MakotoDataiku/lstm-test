@@ -2083,7 +2083,8 @@
         "params": {
           "n_estimators": [
             50,
-            100
+            100,
+            120
           ],
           "loss": [
             "linear"

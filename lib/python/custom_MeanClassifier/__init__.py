@@ -1,3 +1,4 @@
+from custom_MeanClassifier.MeanClassifier import MeanClassifier
 def __init__(self, arg1, arg2, arg3, ..., argN):
 
     # print("Initializing classifier:\n")

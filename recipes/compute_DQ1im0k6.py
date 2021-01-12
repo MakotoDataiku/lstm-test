@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
@@ -16,10 +17,8 @@ reg = PLS(n_components=2)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 reg.fit(X_train, y_train)
 
-import pickle
-s = pickle.dumps(reg)
-
-
-# Write recipe outputs
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 models = dataiku.Folder("DQ1im0k6")
-models_info = models.get_info()
+filename = '/finalized_model.sav'
+model_path = models.get_path() + filename
+pickle.dump(reg, open(model_path, 'wb'))

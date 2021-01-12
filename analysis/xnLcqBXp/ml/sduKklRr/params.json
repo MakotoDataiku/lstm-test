@@ -538,7 +538,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "extra_trees": {
       "n_estimators": {
@@ -1179,7 +1179,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "neural_network": {
       "layer_sizes": {
@@ -1884,7 +1884,13 @@
       "epsilon": 1.0E-6,
       "optimizer": "BFGS"
     },
-    "custom_python": [],
+    "custom_python": [
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.linear_model import SGDClassifier\n\nclf \u003d SGDClassifier(loss\u003d\"hinge\", penalty\u003d\"12\", max_iter\u003d5)\n",
+        "name": "Custom Python model"
+      }
+    ],
     "plugin_python": {
       "CustomPyPredAlgo_model-lightgbm_model-lightgbm_classification": {
         "pluginId": "model-lightgbm",
@@ -1896,48 +1902,48 @@
             "gbdt"
           ],
           "num_leaves": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "max_depth": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
             0.2
           ],
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "early_stopping": false,
-          "early_stopping_rounds": 4.0,
+          "early_stopping_rounds": 4,
           "min_split_gain": [
-            0.0
+            0
           ],
           "min_child_weight": [
             0.001
           ],
           "min_child_samples": [
-            20.0
+            20
           ],
           "subsample": [
-            1.0
+            1
           ],
           "subsample_freq": [
-            0.0
+            0
           ],
           "colsample_bytree": [
-            1.0
+            1
           ],
           "reg_alpha": [
-            0.0
+            0
           ],
           "reg_lambda": [
-            0.0
+            0
           ],
-          "random_state": 1337.0,
-          "n_jobs": 4.0
+          "random_state": 1337,
+          "n_jobs": 4
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,

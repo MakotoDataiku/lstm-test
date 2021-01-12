@@ -2,7 +2,12 @@
   "name": "Clustering",
   "color": "#0F786B",
   "items": [],
-  "shared": [],
+  "shared": [
+    {
+      "objectId": "titanic_train",
+      "objectType": "DATASET"
+    }
+  ],
   "tags": [],
   "customFields": {},
   "checklists": {

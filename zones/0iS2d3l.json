@@ -1,7 +1,16 @@
 {
   "name": "ML in Code Recipe",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "output_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "recipe from notebook PLS",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

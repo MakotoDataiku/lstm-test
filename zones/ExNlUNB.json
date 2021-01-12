@@ -29,14 +29,6 @@
     {
       "objectId": "train_Prediction__SCIKIT_MODEL__on_house_price",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "recipe from notebook PLS",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "output_scored",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],

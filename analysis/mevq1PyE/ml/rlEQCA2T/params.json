@@ -411,8 +411,8 @@
     "custom_python": [
       {
         "enabled": true,
-        "code": "# This sample code uses a standard scikit-learn algorithm, the Birch clustering.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X), fit_predict(X) and predict(X) methods\n\nfrom sklearn.cluster import Birch\nclf \u003d Birch(n_clusters\u003d5)\n",
-        "name": "Custom Python model",
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Birch clustering.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X), fit_predict(X) and predict(X) methods\n\nfrom sklearn.cluster import Birch\n\nclf \u003d Birch(n_clusters\u003d5)\n",
+        "name": "Birch",
         "custom_has_k": false,
         "k": [
           5

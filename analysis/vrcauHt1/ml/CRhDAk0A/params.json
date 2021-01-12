@@ -88,10 +88,10 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DateSource"
         },
@@ -132,10 +132,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -154,10 +154,10 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
@@ -176,10 +176,10 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
@@ -200,7 +200,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
         },
@@ -218,10 +218,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -242,7 +242,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
         },
@@ -260,10 +260,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -281,10 +281,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -302,10 +302,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -323,10 +323,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
         },
@@ -344,10 +344,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -365,10 +365,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -404,10 +404,10 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
@@ -425,10 +425,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -446,10 +446,10 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },

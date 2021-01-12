@@ -2008,7 +2008,7 @@
       },
       {
         "enabled": true,
-        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nimport lightgbm as lgb\n\nclf \u003d lgb()\n",
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom lightgbm import LGBMClassifier\n\nclf \u003d LGBMClassifier()\n",
         "name": "Custom Python model"
       }
     ],

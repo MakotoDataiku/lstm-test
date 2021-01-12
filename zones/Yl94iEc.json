@@ -9,6 +9,10 @@
     {
       "objectId": "compute_DQ1im0k6",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "output_scored_2",
+      "objectType": "DATASET"
     }
   ],
   "shared": [

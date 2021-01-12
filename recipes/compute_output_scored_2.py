@@ -25,7 +25,7 @@ X_test = df[["bathrooms", "bedrooms", "sqft_living"]].values
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 result = loaded_model.predict(X_test)
-df_test["predicted"] = result
+df["predicted"] = result
 
 
 # Compute recipe outputs from inputs

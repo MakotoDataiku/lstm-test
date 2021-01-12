@@ -5,6 +5,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 from sklearn.model_selection import train_test_split
 from custom_PLS.custom_PLS import PLS
+import pickle
 
 df_train = dataiku.Dataset("house_price").get_dataframe()
 

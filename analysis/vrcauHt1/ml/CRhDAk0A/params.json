@@ -2074,6 +2074,25 @@
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
         "enabled": false
+      },
+      "CustomPyPredAlgo_custom-adaboost_custom-adaboost_adaboost": {
+        "pluginId": "custom-adaboost",
+        "pluginVersion": "0.0.1",
+        "elementId": "custom-adaboost_adaboost",
+        "name": "Custom algo test_my-algo",
+        "params": {
+          "n_estimators": [
+            50.0,
+            100.0
+          ],
+          "loss": [
+            "linear"
+          ],
+          "random_state": 1337.0
+        },
+        "supportsSampleWeights": false,
+        "acceptsSparseMatrix": false,
+        "enabled": false
       }
     },
     "keras": {

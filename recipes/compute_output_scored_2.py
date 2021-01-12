@@ -9,16 +9,16 @@ import pickle
 models = dataiku.Folder("DQ1im0k6")
 models_info = models.get_info()
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# load the model from disk
 model_path = models.file_path("finalized_model.sav")
+loaded_model = pickle.load(open(model_path, 'rb'))
+
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 output = dataiku.Dataset("output")
 df = output.get_dataframe()
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# load the model from disk
-loaded_model = pickle.load(open(model_path, 'rb'))
+
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 X_test = df[["bathrooms", "bedrooms", "sqft_living"]].values

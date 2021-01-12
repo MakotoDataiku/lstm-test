@@ -9,7 +9,7 @@ class PLS():
         self.pls.fit(X, Y)
         return self.pls
     
-    def predict(self, X, Y, copy=True):
+    def predict(self, X, copy=True):
         return self.pls.predict(X, copy).flatten()
     
     def score(self, X, Y, sample_weight=None):

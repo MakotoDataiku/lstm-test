@@ -12,6 +12,9 @@ class PLS():
     def predict(self, X, copy=True):
         return self.pls.predict(X, copy).flatten()
     
+    def predict_proba(self, X, copy=True):
+        return self.pls.predict_proba(X, copy).flatten()
+    
     def score(self, X, Y, sample_weight=None):
         return self.pls.score(X, Y, sample_weight)
     

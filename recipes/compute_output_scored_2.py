@@ -35,4 +35,4 @@ df["predicted"] = result
 
 # Write recipe outputs
 output_scored_2 = dataiku.Dataset("output_scored_2")
-output_scored_2.write_with_schema(df_test)
+output_scored_2.write_with_schema(df)

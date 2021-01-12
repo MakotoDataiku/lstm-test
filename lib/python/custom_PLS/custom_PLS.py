@@ -1,6 +1,6 @@
 from sklearn.cross_decomposition import PLSRegression
 
-class ExamplePLS():
+class PLS():
     def __init__(self, n_components=2, scale=True, max_iter=500, tol=1e-06, copy=True):
         self.pls = PLSRegression(n_components, scale, max_iter, tol, copy)
         

@@ -18,6 +18,10 @@ class PLS():
     def get_params(self, **parameters):
         return self.pls.get_params(**parameters)
     
+    def set_params(self, **parameters):
+        self.pls.set_params(**parameters)
+        return self
+    
     @property
     def intercept_(self):
         return 0

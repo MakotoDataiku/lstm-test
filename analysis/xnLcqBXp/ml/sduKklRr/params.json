@@ -1887,7 +1887,7 @@
     "custom_python": [
       {
         "enabled": true,
-        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.ensemble import BaggingRegressor\n\nclf \u003d BaggingRegressor()\n",
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.ensemble import RandomForestClassifier\n\nclf \u003d RandomForestClassifier()\n",
         "name": "Custom Python model"
       }
     ],

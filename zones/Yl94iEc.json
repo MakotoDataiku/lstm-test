@@ -1,7 +1,12 @@
 {
   "name": "Models in a folder",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "DQ1im0k6",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [
     {
       "objectId": "house_price",

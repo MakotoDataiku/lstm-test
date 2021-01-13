@@ -1887,8 +1887,18 @@
     "custom_python": [
       {
         "enabled": true,
-        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.ensemble import AdaBoostClassifier\n\nclf \u003d AdaBoostClassifier()",
-        "name": "AdaBoostClassifier"
+        "code": "from tslearn.neighbors import KNeighborsTimeSeriesClassifier\nclf \u003d KNeighborsTimeSeriesClassifier(n_neighbors\u003d2)",
+        "name": "KNeighborsTimeSeriesClassifier"
+      },
+      {
+        "enabled": true,
+        "code": "from tslearn.svm import TimeSeriesSVC\nclf \u003d TimeSeriesSVC(C\u003d1.0, kernel\u003d\"gak\")",
+        "name": "TimeSeriesSVC"
+      },
+      {
+        "enabled": true,
+        "code": "from tslearn.shapelets import LearningShapelets\nclf \u003d LearningShapelets(n_shapelets_per_size\u003d{3: 1})",
+        "name": "LearningShapelets"
       }
     ],
     "plugin_python": {

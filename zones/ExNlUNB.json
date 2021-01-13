@@ -37,6 +37,10 @@
     {
       "objectId": "11jV8DLz",
       "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "output_scored2",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

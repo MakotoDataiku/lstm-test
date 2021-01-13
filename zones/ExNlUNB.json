@@ -39,10 +39,6 @@
       "objectType": "SAVED_MODEL"
     },
     {
-      "objectId": "output_scored2",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "metrics_data",
       "objectType": "DATASET"
     },

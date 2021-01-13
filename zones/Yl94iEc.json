@@ -21,10 +21,6 @@
     {
       "objectId": "RA14LxSt",
       "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_RA14LxSt",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [

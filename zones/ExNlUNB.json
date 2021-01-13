@@ -29,6 +29,14 @@
     {
       "objectId": "train_Prediction__SCIKIT_MODEL__on_house_price",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "train_Prediction__LEASTSQUARE_REGRESSION__on_house_price",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "11jV8DLz",
+      "objectType": "SAVED_MODEL"
     }
   ],
   "shared": [],

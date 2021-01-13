@@ -17,6 +17,10 @@
     {
       "objectId": "compute_output_scored_2",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "RA14LxSt",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [

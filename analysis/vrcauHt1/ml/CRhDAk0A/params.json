@@ -2027,7 +2027,7 @@
         "name": "TimeSeriesSVC"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "from tslearn.shapelets import LearningShapelets\nclf \u003d LearningShapelets(n_shapelets_per_size\u003d{3: 1})",
         "name": "LearningShapelets"
       }

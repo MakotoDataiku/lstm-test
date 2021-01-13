@@ -45,6 +45,10 @@
     {
       "objectId": "metrics_data",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "evaluate_on_output_1",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

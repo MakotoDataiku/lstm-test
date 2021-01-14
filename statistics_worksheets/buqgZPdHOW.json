@@ -29,16 +29,33 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "fit_distribution",
+        "distributions": [
+          {
+            "distribution": {
+              "type": "normal"
+            }
+          }
+        ],
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "price",
+          "type": "CONTINUOUS"
+        },
+        "id": "McD9u0a"
+      }
+    ],
     "id": "WpRfjXb"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1610632465244
+    "lastModifiedOn": 1610632543856
   },
   "creationTag": {
     "versionNumber": 0,

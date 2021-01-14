@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608732863755
+    "lastModifiedOn": 1610632517965
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,7 +90,7 @@
       },
       {
         "name": "price",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "bedrooms",

@@ -1125,7 +1125,7 @@
     },
     "leastsquare_regression": {
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "sgd_regression": {
       "epsilon": {
@@ -2002,12 +2002,12 @@
     },
     "custom_python": [
       {
-        "enabled": true,
+        "enabled": false,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\nfrom catboost import Pool, CatBoostRegressor\nclf \u003d CatBoostRegressor(iterations\u003d2, \n                          depth\u003d2, \n                          learning_rate\u003d1, \n                          loss_function\u003d\u0027RMSE\u0027)\n",
         "name": "CatBoostRegressor"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\nfrom lightgbm import LGBMRegressor\nclf \u003d LGBMRegressor(max_depth\u003d10, n_estimators\u003d10)",
         "name": "LGBMRegressor"
       },

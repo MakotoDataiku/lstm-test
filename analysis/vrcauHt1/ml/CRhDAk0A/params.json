@@ -1099,7 +1099,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -1125,7 +1125,7 @@
     },
     "leastsquare_regression": {
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "sgd_regression": {
       "epsilon": {

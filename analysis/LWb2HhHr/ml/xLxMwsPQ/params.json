@@ -29,7 +29,7 @@
         "rules": []
       },
       "samplingMethod": "HEAD_SEQUENTIAL",
-      "maxRecords": 1000,
+      "maxRecords": 10000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
@@ -135,7 +135,7 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -157,7 +157,7 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -260,7 +260,7 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "dummy_drop": "AUTO",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -327,7 +327,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": true,

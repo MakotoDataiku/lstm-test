@@ -1898,14 +1898,14 @@
         "name": "LearningShapelets"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "from tslearn.neighbors import KNeighborsTimeSeriesClassifier\nclf \u003d KNeighborsTimeSeriesClassifier(n_neighbors\u003d2)",
         "name": "KNeighborsTimeSeriesClassifier"
       },
       {
         "enabled": true,
-        "code": "from sklearn.neighbors import KNeighborsClassifier\nclf \u003d KNeighborsClassifier(n_neighbors\u003d3)",
-        "name": "KNeighborsClassifier"
+        "code": "from sklearn.neighbors import RadiusNeighborsClassifier\nclf \u003d RadiusNeighborsClassifier(radius\u003d1.0)",
+        "name": "RadiusNeighborsClassifier"
       }
     ],
     "plugin_python": {

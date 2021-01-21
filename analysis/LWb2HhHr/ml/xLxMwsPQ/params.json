@@ -220,7 +220,7 @@
         "stopWordsMode": "NONE",
         "useCustomVectorizer": false,
         "name": "Review Text",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
           "userModified": true,

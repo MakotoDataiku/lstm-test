@@ -170,7 +170,7 @@
       },
       "Positive Feedback Count": {
         "generate_derivative": false,
-        "numerical_handling": "REGULAR",
+        "numerical_handling": "CUSTOM",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
@@ -181,12 +181,12 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
+        "customHandlingCode": "from sklearn import preprocessing\nimport numpy as np\n\n# Applies log transformation to the feature\nprocessor \u003d preprocessing.FunctionTransformer(np.log1p)\n",
+        "customProcessorWantsMatrix": true,
         "sendToInput": "main"
       },
       "col_0": {
@@ -208,7 +208,7 @@
         "sendToInput": "main"
       },
       "Review Text": {
-        "text_handling": "TOKENIZE_HASHING_SVD",
+        "text_handling": "CUSTOM",
         "minRowsRatio": 0.001,
         "maxRowsRatio": 0.8,
         "maxWords": 0,
@@ -220,15 +220,15 @@
         "stopWordsMode": "NONE",
         "useCustomVectorizer": false,
         "name": "Review Text",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "TEXT",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "FreeText"
         },
         "autoReason": "REJECT_DEFAULT_TEXT_HANDLING",
-        "customHandlingCode": "",
+        "customHandlingCode": "from sklearn.feature_extraction.text import CountVectorizer\nimport dataiku\nfold \u003d dataiku.Folder(\"Vocabulary\")\n\n\nwith open(fold.get_path() + \u0027/vocabulary.txt\u0027) as f:\n    voc \u003d f.read()\nvoc \u003d voc.split(\u0027\\n\u0027)\n\n# A custom code vectorizer must define the \u0027transformer\u0027 variable\nprocessor \u003d CountVectorizer(\n             min_df \u003d 10, # Tokens must appear at least in 3 documents\n             max_df \u003d 0.6, # Tokens that appear in more than 80% of documents are ignored\n             ngram_range \u003d (1,2),\n             vocabulary \u003d voc,\n             # Here we override the token selection regexp\n             token_pattern \u003d u\u0027(?u)\\\\b\\\\w\\\\w\\\\w\\\\w\\\\w+\\\\b\u0027)\n\n",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
@@ -330,12 +330,12 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
+        "customHandlingCode": "from sklearn import preprocessing\nimport numpy as np\n\n# Applies log transformation to the feature\nprocessor \u003d preprocessing.FunctionTransformer(np.log1p)\n",
+        "customProcessorWantsMatrix": true,
         "sendToInput": "main"
       }
     },
@@ -535,7 +535,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "extra_trees": {
       "n_estimators": {
@@ -1176,7 +1176,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "neural_network": {
       "layer_sizes": {
@@ -1881,7 +1881,18 @@
       "epsilon": 1.0E-6,
       "optimizer": "BFGS"
     },
-    "custom_python": [],
+    "custom_python": [
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.ensemble import AdaBoostClassifier\n\nclf \u003d AdaBoostClassifier(n_estimators\u003d20)\n",
+        "name": "Custom Python model"
+      },
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\nfrom catboost import Pool, CatBoostClassifier\nclf \u003d CatBoostClassifier()\n",
+        "name": "Custom Python model"
+      }
+    ],
     "plugin_python": {
       "CustomPyPredAlgo_model-lightgbm_model-lightgbm_classification": {
         "pluginId": "model-lightgbm",
@@ -1893,48 +1904,48 @@
             "gbdt"
           ],
           "num_leaves": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "max_depth": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
             0.2
           ],
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "early_stopping": false,
-          "early_stopping_rounds": 4.0,
+          "early_stopping_rounds": 4,
           "min_split_gain": [
-            0.0
+            0
           ],
           "min_child_weight": [
             0.001
           ],
           "min_child_samples": [
-            20.0
+            20
           ],
           "subsample": [
-            1.0
+            1
           ],
           "subsample_freq": [
-            0.0
+            0
           ],
           "colsample_bytree": [
-            1.0
+            1
           ],
           "reg_alpha": [
-            0.0
+            0
           ],
           "reg_lambda": [
-            0.0
+            0
           ],
-          "random_state": 1337.0,
-          "n_jobs": 4.0
+          "random_state": 1337,
+          "n_jobs": 4
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
@@ -1997,7 +2008,8 @@
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
-    "envMode": "USE_BUILTIN_MODE"
+    "envMode": "EXPLICIT_ENV",
+    "envName": "custom-models"
   },
   "containerSelection": {
     "containerMode": "INHERIT"

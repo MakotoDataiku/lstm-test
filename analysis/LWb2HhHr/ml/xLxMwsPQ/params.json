@@ -1904,7 +1904,7 @@
       },
       {
         "enabled": true,
-        "code": "from sklearn.neighbors import RadiusNeighborsClassifier\nclf \u003d RadiusNeighborsClassifier(radius\u003d10)",
+        "code": "from sklearn.neighbors import RadiusNeighborsClassifier\nclf \u003d RadiusNeighborsClassifier(radius\u003d2)",
         "name": "RadiusNeighborsClassifier"
       }
     ],

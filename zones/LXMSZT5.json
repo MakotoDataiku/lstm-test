@@ -1,7 +1,32 @@
 {
   "name": "custom-preprocessing-custom-model",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "E_Commerce_Reviews",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_E_Commerce_Reviews_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "E_Commerce_Reviews_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "train_Prediction__SCIKIT_MODEL__on_E_Commerce_Reviews_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "tNoGserq",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "g5pPjeXO",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

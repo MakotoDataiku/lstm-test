@@ -170,7 +170,7 @@
       },
       "Positive Feedback Count": {
         "generate_derivative": false,
-        "numerical_handling": "CUSTOM",
+        "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,

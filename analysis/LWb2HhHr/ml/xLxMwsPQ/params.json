@@ -1903,9 +1903,14 @@
         "name": "KNeighborsTimeSeriesClassifier"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "from sklearn.neighbors import RadiusNeighborsClassifier\nclf \u003d RadiusNeighborsClassifier(radius\u003d2)",
         "name": "RadiusNeighborsClassifier"
+      },
+      {
+        "enabled": true,
+        "code": "from sklearn.neural_network import MLPClassifier\nclf \u003d MLPClassifier(random_state\u003d1, max_iter\u003d30)",
+        "name": "Custom Python model"
       }
     ],
     "plugin_python": {

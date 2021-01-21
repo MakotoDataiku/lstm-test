@@ -1901,6 +1901,11 @@
         "enabled": true,
         "code": "from tslearn.neighbors import KNeighborsTimeSeriesClassifier\nclf \u003d KNeighborsTimeSeriesClassifier(n_neighbors\u003d2)",
         "name": "KNeighborsTimeSeriesClassifier"
+      },
+      {
+        "enabled": true,
+        "code": "from sklearn.neighbors import KNeighborsClassifier\nclf \u003d KNeighborsClassifier(n_neighbors\u003d3)",
+        "name": "KNeighborsClassifier"
       }
     ],
     "plugin_python": {

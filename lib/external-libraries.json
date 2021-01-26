@@ -5,11 +5,17 @@
       "checkout": "master",
       "remotePath": "/LSSVMlib/",
       "lastHash": "8dd87dab61fb7a7fa41f381aba79babfdbffa8f5"
+    },
+    "/python/skorch/": {
+      "remote": "git@github.com:skorch-dev/skorch.git",
+      "checkout": "master",
+      "remotePath": "/skorch/"
     }
   },
   "pythonPath": [
     "python",
-    "/python/LSSVMlib/"
+    "/python/LSSVMlib/",
+    "/python/skorch/"
   ],
   "rsrcPath": [
     "R"

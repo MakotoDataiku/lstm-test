@@ -1930,7 +1930,7 @@
       {
         "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.naive_bayes import GaussianNB\nclf \u003d GaussianNB()\n",
-        "name": "Custom Python model"
+        "name": "GaussianNB"
       }
     ],
     "plugin_python": {

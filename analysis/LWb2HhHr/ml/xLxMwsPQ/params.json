@@ -1923,9 +1923,14 @@
         "name": "LSSVMRegression"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "from torch import nn\nfrom skorch.classifier import NeuralNetClassifier\n\nclass MyModule(nn.Module):\n    def __init__(self, num_units\u003d10, nonlin\u003dnn.ReLU()):\n        super(MyModule, self).__init__()\n\n        self.dense0 \u003d nn.Linear(20, num_units)\n        self.nonlin \u003d nonlin\n        self.dropout \u003d nn.Dropout(0.5)\n        self.dense1 \u003d nn.Linear(num_units, num_units)\n        self.output \u003d nn.Linear(num_units, 2)\n        self.softmax \u003d nn.Softmax(dim\u003d-1)\n\n    def forward(self, X, **kwargs):\n        X \u003d self.nonlin(self.dense0(X))\n        X \u003d self.dropout(X)\n        X \u003d self.nonlin(self.dense1(X))\n        X \u003d self.softmax(self.output(X))\n        return X\n\nclf\u003dNeuralNetClassifier(MyModule)",
         "name": "NeuralNetClassifier"
+      },
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.naive_bayes import GaussianNB\nclf \u003d GaussianNB()\n",
+        "name": "Custom Python model"
       }
     ],
     "plugin_python": {

@@ -1911,6 +1911,11 @@
         "enabled": true,
         "code": "from sklearn.neural_network import MLPClassifier\nclf \u003d MLPClassifier(random_state\u003d1, max_iter\u003d300)",
         "name": "MLPClassifier"
+      },
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\nfrom sklearn.ensemble import StackingClassifier\n\nclf \u003d StackingClassifier()\n",
+        "name": "Custom Python model"
       }
     ],
     "plugin_python": {

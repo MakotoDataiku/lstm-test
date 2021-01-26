@@ -1919,7 +1919,7 @@
       },
       {
         "enabled": true,
-        "code": "from LSSVMlib import LSSVMRegression\n\nclf\u003dLSSVMRegression()",
+        "code": "from LSSVMlib.LSSVMRegression import LSSVMRegression\n\nclf\u003dLSSVMRegression()",
         "name": "LSSVMRegression"
       }
     ],

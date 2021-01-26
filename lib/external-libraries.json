@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "/python/LSSVMlib/": {
+      "remote": "git@github.com:DannyVanpoucke/LSSVMlib.git",
+      "checkout": "master",
+      "remotePath": "/LSSVMlib/"
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "/python/LSSVMlib/"
   ],
   "rsrcPath": [
     "R"

@@ -9,7 +9,8 @@
     "/python/skorch/": {
       "remote": "git@github.com:skorch-dev/skorch.git",
       "checkout": "master",
-      "remotePath": "/skorch/"
+      "remotePath": "/skorch/",
+      "lastHash": "be5569d31755bd375ebf44e47d66539e815fff13"
     }
   },
   "pythonPath": [

@@ -3,7 +3,8 @@
     "/python/": {
       "remote": "git@github.com:DannyVanpoucke/LSSVMlib.git",
       "checkout": "master",
-      "remotePath": "/LSSVMlib/"
+      "remotePath": "/LSSVMlib/",
+      "lastHash": "8dd87dab61fb7a7fa41f381aba79babfdbffa8f5"
     }
   },
   "pythonPath": [

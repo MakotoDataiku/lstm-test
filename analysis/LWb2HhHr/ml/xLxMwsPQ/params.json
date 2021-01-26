@@ -1883,27 +1883,27 @@
     },
     "custom_python": [
       {
-        "enabled": false,
+        "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.ensemble import AdaBoostClassifier\n\nclf \u003d AdaBoostClassifier(n_estimators\u003d20)\n",
         "name": "AdaBoostClassifier"
       },
       {
-        "enabled": false,
+        "enabled": true,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\nfrom catboost import Pool, CatBoostClassifier\nclf \u003d CatBoostClassifier()\n",
         "name": "CatBoostClassifier"
       },
       {
-        "enabled": false,
+        "enabled": true,
         "code": "from tslearn.shapelets import LearningShapelets\nclf \u003d LearningShapelets(n_shapelets_per_size\u003d{3: 1})",
         "name": "LearningShapelets"
       },
       {
-        "enabled": false,
+        "enabled": true,
         "code": "from tslearn.neighbors import KNeighborsTimeSeriesClassifier\nclf \u003d KNeighborsTimeSeriesClassifier(n_neighbors\u003d2)",
         "name": "KNeighborsTimeSeriesClassifier"
       },
       {
-        "enabled": false,
+        "enabled": true,
         "code": "from sklearn.neighbors import RadiusNeighborsClassifier\nclf \u003d RadiusNeighborsClassifier(radius\u003d2)",
         "name": "RadiusNeighborsClassifier"
       },

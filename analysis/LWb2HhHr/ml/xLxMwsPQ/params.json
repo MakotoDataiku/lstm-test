@@ -1921,6 +1921,11 @@
         "enabled": true,
         "code": "from LSSVMlib.LSSVMRegression import LSSVMRegression\n\nclf\u003dLSSVMRegression()",
         "name": "LSSVMRegression"
+      },
+      {
+        "enabled": true,
+        "code": "from skorch.classifier import NeuralNetClassifier\n\nclf\u003dNeuralNetClassifier()",
+        "name": "Custom Python model"
       }
     ],
     "plugin_python": {

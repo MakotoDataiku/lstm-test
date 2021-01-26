@@ -1924,7 +1924,7 @@
       },
       {
         "enabled": true,
-        "code": "from skorch.classifier import NeuralNetClassifier\n\nclf\u003dNeuralNetClassifier()",
+        "code": "from torch import nn\nfrom skorch.classifier import NeuralNetClassifier\n\nclass MyModule(nn.Module):\n    def __init__(self, num_units\u003d10, nonlin\u003dnn.ReLU()):\n        super(MyModule, self).__init__()\n\n        self.dense0 \u003d nn.Linear(20, num_units)\n        self.nonlin \u003d nonlin\n        self.dropout \u003d nn.Dropout(0.5)\n        self.dense1 \u003d nn.Linear(num_units, num_units)\n        self.output \u003d nn.Linear(num_units, 2)\n        self.softmax \u003d nn.Softmax(dim\u003d-1)\n\n    def forward(self, X, **kwargs):\n        X \u003d self.nonlin(self.dense0(X))\n        X \u003d self.dropout(X)\n        X \u003d self.nonlin(self.dense1(X))\n        X \u003d self.softmax(self.output(X))\n        return X\n\nclf\u003dNeuralNetClassifier(MyModule)",
         "name": "NeuralNetClassifier"
       }
     ],

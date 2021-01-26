@@ -7,7 +7,7 @@
     "objects": []
   },
   "projectType": "REGULAR",
-  "projectAppType": "REGULAR",
+  "projectAppType": "APP_TEMPLATE",
   "owner": "admin",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -175,6 +175,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1611681848018
   },
   "creationTag": {
     "versionNumber": 0,

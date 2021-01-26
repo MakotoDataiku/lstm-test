@@ -1898,17 +1898,17 @@
         "name": "LearningShapelets"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "from tslearn.neighbors import KNeighborsTimeSeriesClassifier\nclf \u003d KNeighborsTimeSeriesClassifier(n_neighbors\u003d2)",
         "name": "KNeighborsTimeSeriesClassifier"
       },
       {
         "enabled": true,
-        "code": "from sklearn.neighbors import RadiusNeighborsClassifier\nclf \u003d RadiusNeighborsClassifier(radius\u003d2)",
+        "code": "from sklearn.neighbors import RadiusNeighborsClassifier\nclf \u003d RadiusNeighborsClassifier(radius\u003d10)",
         "name": "RadiusNeighborsClassifier"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "from sklearn.neural_network import MLPClassifier\nclf \u003d MLPClassifier(random_state\u003d1, max_iter\u003d300)",
         "name": "MLPClassifier"
       }

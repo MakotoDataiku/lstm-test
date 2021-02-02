@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1611253514608
+    "lastModifiedOn": 1612265402382
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,10 +86,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "col_0",
-        "type": "bigint"
-      },
       {
         "name": "Clothing ID",
         "type": "bigint"

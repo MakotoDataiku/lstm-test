@@ -4,18 +4,7 @@
     "authorizations": []
   },
   "exposedObjects": {
-    "objects": [
-      {
-        "type": "DATASET",
-        "localName": "E_Commerce_Reviews",
-        "rules": [
-          {
-            "targetProject": "HANDSONCUSTOMMODELS",
-            "appearOnFlow": true
-          }
-        ]
-      }
-    ]
+    "objects": []
   },
   "projectType": "REGULAR",
   "projectAppType": "APP_TEMPLATE",
@@ -188,11 +177,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1612264189418
+    "lastModifiedOn": 1612264891420
   },
   "creationTag": {
     "versionNumber": 0,

@@ -189,24 +189,6 @@
         "customProcessorWantsMatrix": true,
         "sendToInput": "main"
       },
-      "col_0": {
-        "generate_derivative": false,
-        "impute_constant_value": 0.0,
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "autoReason": "REJECT_IDENTIFIER",
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
       "Review Text": {
         "text_handling": "CUSTOM",
         "minRowsRatio": 0.001,

@@ -25,6 +25,21 @@
     {
       "objectId": "g5pPjeXO",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "tNoGserq",
+      "objectType": "SAVED_MODEL",
+      "projectKey": "HANDSONCUSTOMMODELS"
+    },
+    {
+      "objectId": "E_Commerce_Reviews_prepared",
+      "objectType": "DATASET",
+      "projectKey": "HANDSONCUSTOMMODELS"
+    },
+    {
+      "objectId": "g5pPjeXO",
+      "objectType": "MANAGED_FOLDER",
+      "projectKey": "HANDSONCUSTOMMODELS"
     }
   ],
   "shared": [],

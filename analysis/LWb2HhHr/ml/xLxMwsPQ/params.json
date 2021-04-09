@@ -1893,7 +1893,7 @@
         "name": "RadiusNeighborsClassifier"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "from sklearn.neural_network import MLPClassifier\nclf \u003d MLPClassifier(random_state\u003d1, max_iter\u003d300)",
         "name": "MLPClassifier"
       },
@@ -1913,14 +1913,14 @@
         "name": "NeuralNetClassifier"
       },
       {
-        "enabled": true,
+        "enabled": false,
         "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, have at least fit(X,y) and predict(X) methods\n# For a classifier, it must also have a classes_ attribute\n\nfrom sklearn.naive_bayes import GaussianNB\nclf \u003d GaussianNB()\n",
         "name": "GaussianNB"
       },
       {
         "enabled": true,
-        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# classifier, ie, it should:\n#  1. have at least fit(X,y) and predict(X) methods\n#  2. inherit sklearn.base.BaseEstimator\n#  3. handle the attributes in the __init__ function\n#  4. have a classes_ attribute\n#  5. have a predict_proba method (optional)\n#     See: https://doc.dataiku.com/dss/latest/machine-learning/custom-models.html\n\nfrom sklearn.ensemble import AdaBoostClassifier\n\nclf \u003d AdaBoostClassifier(n_estimators\u003d20)\n",
-        "name": "Custom Python model"
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost classifier.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# classifier, ie, it should:\n#  1. have at least fit(X,y) and predict(X) methods\n#  2. inherit sklearn.base.BaseEstimator\n#  3. handle the attributes in the __init__ function\n#  4. have a classes_ attribute\n#  5. have a predict_proba method (optional)\n#     See: https://doc.dataiku.com/dss/latest/machine-learning/custom-models.html\n\nfrom custom_PLS import PLS\n\nclf \u003d PLS()\n",
+        "name": "PLS"
       }
     ],
     "plugin_python": {

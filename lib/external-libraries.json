@@ -11,12 +11,18 @@
       "checkout": "master",
       "remotePath": "/skorch/",
       "lastHash": "be5569d31755bd375ebf44e47d66539e815fff13"
+    },
+    "/python/OPLS": {
+      "remote": "git@github.com:BiRG/pyopls.git",
+      "checkout": "main",
+      "remotePath": ""
     }
   },
   "pythonPath": [
     "python",
     "/python/LSSVMlib/",
-    "/python/skorch/"
+    "/python/skorch/",
+    "/python/OPLS"
   ],
   "rsrcPath": [
     "R"

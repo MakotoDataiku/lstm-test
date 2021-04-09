@@ -14,7 +14,7 @@
     },
     "/python/OPLS": {
       "remote": "git@github.com:BiRG/pyopls.git",
-      "checkout": "main",
+      "checkout": "refs/heads/master",
       "remotePath": ""
     }
   },
